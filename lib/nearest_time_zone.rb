@@ -10,6 +10,11 @@ module NearestTimeZone
   def self.to(latitude, longitude)
     City.nearest(latitude, longitude).andand.time_zone.name
   end
+
+  def self.dump
+    Dump.dump
+    puts "dumped!"
+  end
 end
 
 # load the kdtree so that everything is fast
