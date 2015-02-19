@@ -1,6 +1,4 @@
-require 'spec_helper'
 require 'rake'
-
 module NearestTimeZone
   describe 'rake tasks' do
     before :all do
@@ -19,7 +17,6 @@ module NearestTimeZone
         expect(Dump).to receive(:dump).and_call_original
         run_rake_task
       end
-
     end
   end
 end
