@@ -24,5 +24,4 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "require_all"
   spec.add_dependency "kdtree"
-  spec.add_dependency "andand"
 end
