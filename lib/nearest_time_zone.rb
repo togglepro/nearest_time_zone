@@ -8,7 +8,8 @@ module NearestTimeZone
 
   def self.to(latitude, longitude)
     nearest_city = City.nearest(latitude, longitude)
-    if nearest_city.present?
+
+    if nearest_city
       nearest_city.time_zone.name
     end
   end
